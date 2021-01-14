@@ -18,18 +18,23 @@ while gamingGamer == True:
                 jeemo = stack.pop()
                 meemo = stack.pop()
                 print(str(meemo+jeemo))
+                stack.append(meemo+jeemo)
             if i == "-":
                 jeemo = stack.pop()
                 meemo = stack.pop()
                 print(str(meemo-jeemo))
+                stack.append(meemo-jeemo)
+
             if i == "*":
                 jeemo = stack.pop()
                 meemo = stack.pop()
                 print(str(meemo*jeemo))
+                stack.append(meemo*jeemo)
             if i == "/":
                 jeemo = stack.pop()
                 meemo = stack.pop()
                 print(str(meemo/jeemo))
+                stack.append(meemo/jeemo)
             if i == "p": print(stack)
             if i == "i": stack.append(1/stack.pop())
             if i == "n": stack.append(-1*stack.pop())
